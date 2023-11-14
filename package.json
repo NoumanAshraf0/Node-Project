@@ -1,0 +1,28 @@
+{
+  "name": "node-js-project",
+  "version": "1.0.23",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@eslint/create-config": "^0.4.6",
+    "express": "^4.18.2",
+    "yallist": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "scripts": {
+    "lint": "eslint '*.js?(x)'",
+    "lint-fix": "eslint --fix .  --ext .js",
+    "test": "",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://Noumans-Organization@dev.azure.com/Noumans-Organization/Demo%20Project/_git/NodeJs-Demo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
