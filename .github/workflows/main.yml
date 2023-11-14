@@ -44,5 +44,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          source: "/home/runner/work/Node-Project/Node-Project"
-          target: /home/nouman
+          source: "/home/runner/work/Node-Project/Node-Project/*"
+          target: /home/nouman/Project
