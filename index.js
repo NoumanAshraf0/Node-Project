@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 // Define a route for a sample API endpoint
 app.get('/api/data', (req, res) => {
   const data = {
-    message: 'This is some sample data from the API.',
+    message: 'This is some sample data.',
     timestamp: new Date(),
   };
   res.json(data);
