@@ -37,11 +37,12 @@ jobs:
         with:
           name: node-app
 
-      # - name: Copy folder content recursively to remote
-      #   uses: garygrossgarten/github-action-scp@release
-      #   with:
-      #     local: test
-      #     remote: scp/directory
-      #     host: ${{ secrets.HOST }}
-      #     username: ${{ secrets.SSH_USER }}
-      #     password: ${{ secrets.PASSWORD }}
+      - name: copy file via ssh password
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          source: "/home/runner/work/Node-Project/Node-Project"
+          target: /home/nouman
